@@ -1,0 +1,58 @@
+const FormComponent = ({ title, handleSubmitForm }) => {
+  return (
+    <div>
+      <div className="max-w-xl mx-auto">
+        <form
+          onSubmit={handleSubmitForm}
+          className=" bg-gray-200 p-10  my-10 rounded-md"
+        >
+          <h2 className="text-3xl font-bold py-2 border-b-4 border-b-slate-700 mb-5">
+            {title}
+          </h2>
+          <input
+            name="name"
+            className="border border-y-slate-700 mb-2 w-full text-2xl p-1"
+            placeholder="Enter you name"
+            type="text"
+          />
+          <br />
+          <input
+            name="email"
+            className="border border-y-slate-700 mb-2 w-full text-2xl p-1"
+            placeholder="Enter you email"
+            type="email"
+          />
+          <br />
+          <input
+            name="password"
+            className="border border-y-slate-700 mb-2 w-full text-2xl p-1"
+            placeholder="Enter you password"
+            type="password"
+          />
+          <br />
+          <button
+            type="submit"
+            className="bg-slate-700 cursor-pointer text-white w-full py-2 text-2xl font-medium rounded-sm"
+          >
+            Submit
+          </button>
+          <div className="">
+            <div className="flex text-lg flex-row items-center gap-2 border-b border-dashed border-b-slate-300">
+              <h2 className="font-medium">Name: </h2>
+              {/* <p className="">{name}</p> */}
+            </div>
+            <div className="flex text-lg flex-row items-center gap-2 border-b border-dashed border-b-slate-300">
+              <h2 className="font-medium">Email: </h2>
+              {/* <p className="">{email}</p> */}
+            </div>
+            <div className="flex text-lg flex-row items-center gap-2 border-b border-dashed border-b-slate-300">
+              <h2 className="font-medium">Password: </h2>
+              {/* <p className="">{password}</p> */}
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+export default FormComponent;
