@@ -1,10 +1,12 @@
-import SimpleForm from "./components/SimpleForm/SimpleForm"
+import SimpleForm from "./components/SimpleForm/SimpleForm";
+import StateForm from "./components/StateForm/StateForm";
 
 const App = () => {
   return (
     <div>
-      <SimpleForm />
+      {/* <SimpleForm /> */}
+      <StateForm />
     </div>
-  )
-}
-export default App
+  );
+};
+export default App;
