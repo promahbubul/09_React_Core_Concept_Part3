@@ -3,6 +3,8 @@ import RefForm from "./components/RefForm/RefForm";
 import ReusableForm from "./components/ReusableForm/ReusableForm";
 import SimpleForm from "./components/SimpleForm/SimpleForm";
 import StateForm from "./components/StateForm/StateForm";
+import User from "./components/User/User";
+import UserProvider from "./context/UserProvider";
 
 const App = () => {
   return (
@@ -11,7 +13,10 @@ const App = () => {
       {/* <StateForm /> */}
       {/* <RefForm /> */}
       {/* <CustomHook /> */}
-      <ReusableForm />
+      {/* <ReusableForm /> */}
+      <UserProvider>
+        <User />
+      </UserProvider>
     </div>
   );
 };
